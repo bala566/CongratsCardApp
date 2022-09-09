@@ -8,14 +8,15 @@ body {
 .bg-container {
   background-image: url("https://assets.ccbp.in/frontend/react-js/congrats-card-bg.png");
   min-height: 100vh;
-
+  background-size: cover;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 .heading {
-  font-family: Roboto;
-  font-size: 40px;
+  font-family: "Roboto";
+  font-size: 32px;
+  font-weight: 500px;
   color: #0f172a;
 }
 .profile-container {
@@ -23,16 +24,20 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding-bottom: 20px;
+  align-items: center;
+  width: 80%;
+  border-radius: 12px;
+  padding: 24px;
+  margin-top: 18px;
 }
 .name {
   font-family: Roboto;
-  font-size: 32px;
+  font-size: 24px;
   color: #1e293b;
 }
 .desc {
   font-family: Roboto;
-  font-size: 24px;
+  font-size: 18px;
   color: #1e293b;
 }
 .image {
@@ -40,17 +45,23 @@ body {
   width: 150px;
 }
 @media screen and (min-width: 768px) {
+  .profile-container {
+    width: 50%;
+    padding: 48px;
+    margin-top: 24px;
+  }
   .heading {
-    font-size: 42px;
+    font-size: 64px;
   }
   .name {
-    font-size: 32px;
+    font-size: 48px;
   }
   .desc {
-    font-size: 24px;
+    font-size: 36px;
   }
   .image {
     height: 300px;
     width: 300px;
+    margin-top: 24px;
   }
 }
